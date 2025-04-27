@@ -1,1 +1,0 @@
-# Rendering-3D-scenes
