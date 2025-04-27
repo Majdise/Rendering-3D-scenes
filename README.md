@@ -108,12 +108,6 @@ java -jar RayTrace.jar scenes/simple_scene.txt renders/output.png
 
 ---
 
-## Why I Built This
-
-This project deepens  understanding of how light interacts with surfaces, how cameras project 3D scenes into 2D images, and to explore techniques like soft shadows and reflection in a hands-on way.  
-
----
-
 ## References
 
 - [Fisheye Projection - Research Paper](https://hal.inria.fr/hal-02463429/document)
