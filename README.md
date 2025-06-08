@@ -40,8 +40,11 @@ Built from scratch to explore computer graphics concepts like ray-surface inters
 
 ### Running the Renderer
 1)cd Rendering-3D-scenes
+
 2)javac -d bin src/*.java
+
 3)jar cfe bin/executable.jar RayTracer -C bin .
+
 4)java -jar RayTrace.jar <scene_file> <output_image> [image_width] [image_height]
   -for example you can run: 
   java -jar bin/executable.jar scenes/Pool_fish.txt renders/Pool_fish.png 500 500
