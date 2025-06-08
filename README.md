@@ -36,6 +36,18 @@ Built from scratch to explore computer graphics concepts like ray-surface inters
 
 ---
 
+## Contents
+  1.	Renders:
+      Output images after running java –jar
+  2.	Scenes:
+      Input txt files to the java –jar
+  3. 	Bin:
+      Contains the files created after running:
+      1. javac -d bin src/*.java
+      2. jar cfe bin/executable.jar RayTracer -C bin .
+      This command creates an executable JAR file named executable.jar inside the bin folder. The jar will have RayTraceras its main class,        and it includes all files from the bin directory.
+
+
 ## How to Run
 
 ### Running the Renderer
