@@ -38,19 +38,13 @@ Built from scratch to explore computer graphics concepts like ray-surface inters
 
 ## How to Run
 
-### Requirements
-
-- Python 3 (using only standard libraries + `numpy`)  
-  or
-- Java 8+ (for the `.jar` version)
-
 ### Running the Renderer
-
-**Python version**:
-python RayTracer.py <scene_file> <output_image> [image_width] [image_height]
-
-**Java version**:
-java -jar RayTrace.jar <scene_file> <output_image> [image_width] [image_height]
+1)cd Rendering-3D-scenes
+2)javac -d bin src/*.java
+3)jar cfe bin/executable.jar RayTracer -C bin .
+4)java -jar RayTrace.jar <scene_file> <output_image> [image_width] [image_height]
+  -for example you can run: 
+  java -jar bin/executable.jar scenes/Pool_fish.txt renders/Pool_fish.png 500 500
 
 **Parameters**:
 - `<scene_file>`: Path to a `.txt` file describing the scene.
@@ -85,30 +79,3 @@ Scenes are defined in simple text files. Each line defines an object using a 3-l
 - **Fisheye Camera**: Warps the field of view for dramatic lens effects using a custom distortion formula.
 - **Vector Math Library**: Custom built for handling all the necessary operations like dot products, cross products, and component-wise multiplications (especially useful for color calculations).
 
----
-
-## Example Command
-
-python RayTracer.py scenes/simple_scene.txt renders/output.png 800 800
-```
-
-or
-
-java -jar RayTrace.jar scenes/simple_scene.txt renders/output.png
-
----
-
-## Future Ideas / Possible Improvements
-
-- Add support for additional surfaces (e.g., cylinders, triangles).
-- Implement BSP trees or acceleration structures for faster intersection checks.
-- Add textures and bump mapping.
-- Full global illumination (path tracing).
-- GUI scene builder.
-
----
-
-## References
-
-- [Fisheye Projection - Research Paper](https://hal.inria.fr/hal-02463429/document)
-- [Panotools Wiki: Fisheye Projections](https://wiki.panotools.org/Fisheye_Projection)
